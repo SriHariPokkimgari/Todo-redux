@@ -3,7 +3,11 @@ import {Todo} from "../types"
 
 
 
-const initialState : Todo[] = [{id:Date.now(), text: "Wake Up Early morning...", isDone: false}, {id:Date.now()+1, text: "Go to the ground...", isDone: false}, {id:Date.now(), text: "Start running...", isDone: false}];
+const initialState : Todo[] = [
+  {id:Date.now(), text: "Wake Up Early morning...", isDone: false},
+  {id:Date.now()+1, text: "Go to the ground...", isDone: false},
+  {id:Date.now()+2, text: "Start running...", isDone: false}
+];
 const todoSlice = createSlice({
   name: "todos",
   initialState,
