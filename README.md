@@ -1,50 +1,92 @@
-# React + TypeScript + Vite
+# Todo App with React, Redux & TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/demo-netlify-success?style=flat&logo=netlify)](https://todo-redux-srihari.netlify.app/)
+[![React](https://img.shields.io/badge/react-18.2.0-blue?logo=react)](https://react.dev/)
+[![Redux](https://img.shields.io/badge/redux-4.2.1-purple?logo=redux)](https://redux-toolkit.js.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-Currently, two official plugins are available:
+A modern task management application built with TypeScript and modern web technologies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Todo App Preview](https://via.placeholder.com/800x500.png?text=Todo+App+Screenshot) <!-- Add real screenshot later -->
 
-## Expanding the ESLint configuration
+## Features ✨
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **CRUD Operations**: Add, toggle, and delete todos
+- **Persistent Storage**: Todos saved in localStorage
+- **Dark Mode**: Elegant dark theme with Tailwind CSS
+- **Responsive Design**: Works on mobile & desktop
+- **Type Safety**: Full TypeScript integration
+- **State Management**: Redux Toolkit for predictable state
+- **Modern Styling**: Tailwind CSS utility classes
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies 🛠️
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Frontend**: React 18
+- **State Management**: Redux Toolkit
+- **Styling**: Tailwind CSS
+- **Type Checking**: TypeScript
+- **Build Tool**: Vite
+- **Deployment**: Netlify
+
+## Installation ⚙️
+
+1. Clone repository:
+```bash
+git clone https://github.com/SriHariPokkimgari/Todo-redux.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
 ```
+
+3. Start development server:
+```bash
+npm run dev
+```
+
+## Usage 📖
+
+1. **Add Todo**:
+   - Type task in input field
+   - Press Enter or click Add button
+
+2. **Complete Todo**:
+   - Click checkbox to toggle status
+
+3. **Delete Todo**:
+   - Click trash icon to remove task
+
+4. **Dark Mode**:
+   - Automatically adapts to system preferences
+
+## Folder Structure 📂
+
+```
+src/
+├── app/            # Redux store configuration
+├── features/       # Redux slices (todos logic)
+├── components/     # React components
+├── utils/          # Helper functions (localStorage)
+├── types/          # TypeScript type definitions
+└── main.tsx        # App entry point
+```
+
+## Contributing 🤝
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add awesome feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments 🙏
+
+- [Redux Toolkit Documentation](https://redux-toolkit.js.org/)
+- [Tailwind CSS Docs](https://tailwindcss.com/)
+- [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/)
