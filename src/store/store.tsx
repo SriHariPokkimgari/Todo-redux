@@ -1,10 +1,19 @@
 import { configureStore } from "@reduxjs/toolkit";
 import todosReducer from "../features/todoSlice";
+import { loadTodos } from "../utils/storage";
 
-const store = configureStore({
+const preloadedState = {
+  todos: {
+    todos: loadTodos(),
+    filter: "all"
+  }
+}
+
+ const store = configureStore({
   reducer: {
     todos: todosReducer,
   },
+  preloadedState
 });
 
 export type RootState = ReturnType<typeof store.getState>
