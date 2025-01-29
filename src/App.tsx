@@ -5,7 +5,8 @@ import TodoList from './components/todoList'
 
 const App: React.FC = () => {
   return (
-    <div className='w-dvw h-dvh bg-black flex flex-col items-center'>
+    <div className='min-h-screen  bg-black flex flex-col items-center'>
+      <h1 className='text-white mt-8 text-2xl font-bold italic'>Todo List</h1>
       <InputTodo/>
       <TodoList/>
     </div>

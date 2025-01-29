@@ -16,7 +16,7 @@ const TodoList = () => {
         {
             todos.map((todo) => 
             <li
-                className='mt-4 flex justify-between items-center lg:w-200 w-[40] sm:w-100 bg-zinc-800 px-4 py-2 rounded space-y-2 transition-transform duration-100 ease-in-out'
+                className='mt-4 flex justify-between items-center lg:w-200 md:w-150 w-75 bg-zinc-800 px-4 py-2 rounded space-y-2 transition-transform duration-100 ease-in-out'
                 key={todo.id}
             >
                 <div className='text-white'>

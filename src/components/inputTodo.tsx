@@ -15,9 +15,9 @@ const InputTodo = () => {
         setInputValue('');
     }
   return (
-    <form onSubmit={handleAdd} className="space-x-1 mt-12" >
+    <form onSubmit={handleAdd} className="space-x-1 mt-4" >
         <input 
-        className="bg-gray-600 lg:w-200 w-[60] sm:w-100 rounded border border-gray-600 focus:border-indigo-900 focus:ring-2 focus:ring-indigo-300  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out
+        className="bg-gray-600 lg:w-200 md:w-150 w-75 rounded border border-gray-600 focus:border-indigo-900 focus:ring-2 focus:ring-indigo-300  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out
                     placeholder:text-gray-300 placeholder:italic ..."
         type="text" 
         placeholder="Add a new task..."
